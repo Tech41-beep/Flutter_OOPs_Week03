@@ -10,9 +10,9 @@ class LmsSystem{
   void addStudent(Student student){
     if(_students.containsKey(student.id)){
       throw Exception('Student ${student.id} already exists');
-    } else {
+    } 
       _students[student.id] = student;
-    }
+    
   }
 
   void removeStudent(String studentId) {
@@ -38,9 +38,9 @@ class LmsSystem{
     void addCourse(Course course){
       if(_courses.containsKey(course.id)){
         throw Exception('Course ${course.id} already exists');
-      } else {
+      } 
         _courses[course.id] = course;
-      }
+      
     }
 
       void removeCourse(Course course ) {
